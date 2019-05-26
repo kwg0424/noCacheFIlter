@@ -1,5 +1,5 @@
 # NoCacheFilter for Web Application
-NoCacheFilter is a script for managing and preventing phenomenon such as caching static resources of Web Browser(Chrome, Internet Explorer...)
+NoCacheFilter is a device for managing and preventing phenomenon such as caching static resources of Web Browser(Chrome, Internet Explorer,,,)
 
 ## Installing NoCacheFilter
 
@@ -77,6 +77,20 @@ If you need update with the specified time pattern, add patternType parameter li
 
 If you need version control, add patternType parameter like this : `yyyy-MM-dd-HHmmss`(typeof SimpleDateFormat), `disabled`
 
+```xml
+<filter>
+   <filter-name>noCacheFilter</filter-name>
+   <filter-class>com.filter.NoCacheFilter</filter-class>
+   <init-param>
+      <param-name>patternType</param-name>
+      <param-value>v=1947</param-value>
+   </init-param>
+</filter>
+<filter-mapping>
+   <filter-name>noCacheFilter</filter-name>
+   <url-pattern>*.do</url-pattern>
+</filter-mapping>
+```
 
 ## Issue & Support
 
