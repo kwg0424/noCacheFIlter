@@ -7,16 +7,10 @@ import java.io.PrintWriter;
 
 public class NoCacheFilter implements Filter {
 
-	private String resourcesList;
-	private String patternType;
+	private FilterConfig filterConfig = null;
 
-	public NoCacheFilter() {
-		if (this.resourcesList == null) {
-			resourcesList = "js=src, css=href";
-		}
-	}
-
-	public void destroy() {
+	public void init(FilterConfig filterConfig) {
+		this.filterConfig = filterConfig;
 	}
 
 	public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException {
@@ -28,30 +22,23 @@ public class NoCacheFilter implements Filter {
 		ParseContent parseContent = ParseContent.getInstance();
 		String content = myResponse.toString();
 
-		if (!this.patternType.equals("disabled"))
-			content = parseContent.setNoCache(content, this.resourcesList, this.patternType);
+		String resourcess = filterConfig.getInitParameter("resourcess");
+		if(resourcess == null) {
+			resourcess = "js=src, css=href";
+		}
+		String patternType = filterConfig.getInitParameter("patternType");
+		if (patternType== null) {
+			patternType = "";
+		}
+
+		if (!patternType.equals("disabled"))
+			content = parseContent.setNoCache(content, resourcess, patternType);
 
 		out.write(content);
 		out.flush();
 		out.close();
 	}
 
-	public void init(FilterConfig arg0) {
-	}
-
-	public String getResourcesList() {
-		return resourcesList;
-	}
-
-	public void setResourcesList(String resourcesList) {
-		this.resourcesList = resourcesList;
-	}
-
-	public String getPatternType() {
-		return patternType;
-	}
-
-	public void setPatternType(String patternType) {
-		this.patternType = patternType;
+	public void destroy() {
 	}
 }
