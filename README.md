@@ -1,5 +1,5 @@
 # NoCacheFilter for Web Application
-NoCacheFilter is a device for managing and preventing phenomenon such as caching static resources of Web Browser(Chrome, Internet Explorer...)
+NoCacheFilter is a script for managing and preventing phenomenon such as caching static resources of Web Browser(Chrome, Internet Explorer...)
 
 ## Installing NoCacheFilter
 
