@@ -42,6 +42,7 @@ compile 'com.github.kwg0424:noCacheFilter:1.0.0'
 > option
 
 If you want to designate any other resouces, add parameters. (`css=href`, or `js=src, css=href`)
+
 (default : remove param is `js=src, css=href`)
 ```xml
 <filter>
@@ -60,6 +61,7 @@ If you want to designate any other resouces, add parameters. (`css=href`, or `js
 
 
 If you need update with the specified time pattern, add patternType parameter like this : `yyyy-MM-dd-HHmmss`(typeof SimpleDateFormat), `disabled`
+
 (default : remove param is `uuid`)
 
 ```xml
