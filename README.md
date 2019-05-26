@@ -6,9 +6,9 @@
 * maven
 ```xml
 <dependency>
-	<groupId>com.github.kwg0424</groupId>
-	<artifactId>noCacheFilter</artifactId>
-	<version>1.0.0</version>
+  <groupId>com.github.kwg0424</groupId>
+  <artifactId>noCacheFilter</artifactId>
+  <version>1.0.0</version>
 </dependency>
 ```
 
@@ -20,7 +20,7 @@ compile 'com.github.kwg0424:noCacheFilter:1.0.0'
 * Ivy
 ```xml
 <dependency org='com.github.kwg0424' name='noCacheFilter' rev='1.0.0'>
-	<artifact name='noCacheFilter' ext='pom' ></artifact>
+  <artifact name='noCacheFilter' ext='pom' ></artifact>
 </dependency>
 ```
 
@@ -30,12 +30,12 @@ compile 'com.github.kwg0424:noCacheFilter:1.0.0'
 
 ```xml
 <filter>
-	<filter-name>noCacheFilter</filter-name>
-	<filter-class>com.filter.NoCacheFilter</filter-class>
+  <filter-name>noCacheFilter</filter-name>
+  <filter-class>com.filter.NoCacheFilter</filter-class>
 </filter>
 <filter-mapping>
-	<filter-name>noCacheFilter</filter-name>
-	<url-pattern>*.do</url-pattern>
+  <filter-name>noCacheFilter</filter-name>
+  <url-pattern>*.do</url-pattern>
 </filter-mapping>
 ```
 
@@ -53,8 +53,8 @@ If you specific resources, add parameter ('css=href', or 'js=src, css=href')
 	</init-param>
 </filter>
 <filter-mapping>
-	<filter-name>noCacheFilter</filter-name>
-	<url-pattern>*.do</url-pattern>
+  <filter-name>noCacheFilter</filter-name>
+  <url-pattern>*.do</url-pattern>
 </filter-mapping>
 ```
 
@@ -64,16 +64,16 @@ If you need version control, add patternType parameter like this : `yyyy-MM-dd-H
 
 ```xml
 <filter>
-	<filter-name>noCacheFilter</filter-name>
-	<filter-class>com.filter.NoCacheFilter</filter-class>
-	<init-param>
-		<param-name>patternType</param-name>
-		<param-value>yyyy-MM-dd-HHmmss</param-value>
-	</init-param>
+  <filter-name>noCacheFilter</filter-name>
+  <filter-class>com.filter.NoCacheFilter</filter-class>
+  <init-param>
+    <param-name>patternType</param-name>
+    <param-value>yyyy-MM-dd-HHmmss</param-value>
+  </init-param>
 </filter>
 <filter-mapping>
-	<filter-name>noCacheFilter</filter-name>
-	<url-pattern>*.do</url-pattern>
+  <filter-name>noCacheFilter</filter-name>
+  <url-pattern>*.do</url-pattern>
 </filter-mapping>
 ```
 
