@@ -1,7 +1,7 @@
-# NoCacheFilter filter for Web Application
+# NoCacheFilter for Web Application
 
 
-## Installing noCacheFilter
+## Installing NoCacheFilter
 
 * maven
 ```xml
