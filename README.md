@@ -2,12 +2,12 @@
 NoCacheFilter is a device for managing and preventing phenomenon such as caching static resources of Web Browser(Chrome, Internet Explorer ...)
 
 ## Purpose of use
- > To make up for removal cache of Web Browser when you build a website
+  To make up for removal cache of Web Browser when you build a website
  
- > To deploy new resources to the client by force.
+ To deploy new resources to the client by force.
  
-  > For enhanced usability,
-    You can add disposable uuid to static resources when without clear statement.
+   For enhanced usability,
+    You can add disposable uuid to static resources without clear statement.
     You can manage each scripts without no modification.
 
 ## ShowCase
