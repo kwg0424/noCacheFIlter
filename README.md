@@ -1,6 +1,16 @@
 # NoCacheFilter for Web Application
 NoCacheFilter is a device for managing and preventing phenomenon such as caching static resources of Web Browser(Chrome, Internet Explorer,,,)
 
+> from
+```xml
+<link rel="stylesheet" href="/resources/css/font-awesome.css">
+```
+
+> to
+```xml
+<link rel="stylesheet" href="/resources/css/font-awesome.css?_noCache=aOruOMSkPqm">
+```
+
 ## Installing NoCacheFilter
 
 * maven
