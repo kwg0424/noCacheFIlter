@@ -41,8 +41,8 @@ compile 'com.github.kwg0424:noCacheFilter:1.0.0'
 
 > option
 
-If you specific resources, add parameter ('css=href', or 'js=src, css=href')
-(default : remove param is 'js=src, css=href')
+If you specific resources, add parameter (`css=href`, or `js=src, css=href`)
+(default : remove param is `js=src, css=href`)
 ```xml
 <filter>
    <filter-name>noCacheFilter</filter-name>
@@ -59,8 +59,8 @@ If you specific resources, add parameter ('css=href', or 'js=src, css=href')
 ```
 
 
-If you need version control, add patternType parameter like this : `yyyy-MM-dd-HHmmss`(typeof SimpleDateFormat), 'disabled'
-(default : remove param is uuid)
+If you need version control, add patternType parameter like this : `yyyy-MM-dd-HHmmss`(typeof SimpleDateFormat), `disabled`
+(default : remove param is `uuid`)
 
 ```xml
 <filter>
