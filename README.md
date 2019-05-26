@@ -6,11 +6,9 @@
  
  To deploy new resources to the client by force.
  
- For enhanced usability,
+ For enhanced usability, You can add disposable `uuid` to static resources without clear statement.
    
- You can add disposable uuid to static resources without clear statement.
-   
- You can manage each scripts without no modification.
+ You can manage each static resources without no modification.
 
 ## ShowCase
 
