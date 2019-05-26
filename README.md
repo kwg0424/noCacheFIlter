@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="/resources/css/font-awesome.css?_noCache=aOruOMSkPqm">
 ```
 
-## Installing NoCacheFilter
+## Install
 
 * maven
 ```xml
