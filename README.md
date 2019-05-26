@@ -1,4 +1,4 @@
-# noCacheFilter filter for Web Application
+# NoCacheFilter filter for Web Application
 
 
 ## Installing noCacheFilter
