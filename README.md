@@ -39,7 +39,7 @@ compile 'com.github.kwg0424:noCacheFilter:1.0.0'
 
 ## Usage
 
-> default
+* default
 
 ```xml
 <filter>
@@ -52,7 +52,7 @@ compile 'com.github.kwg0424:noCacheFilter:1.0.0'
 </filter-mapping>
 ```
 
-> option
+* option
 
 If you want to designate any other resouces, add parameters. (`css=href` or `js=src, css=href`, default : remove param is `js=src, css=href`)
 ```xml
